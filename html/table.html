@@ -9,14 +9,14 @@
 <body>
          <!표 >
 <table border="1" width="50%" summary="3강의실 스마트웹반입니다.">
-<<caption>시간표</caption>
+<caption>시간표</caption>
 
 <colgroup>
-  <col width="200"/>
-  <col width-"200"/>
-  <col width-"200"/>
-  <col width-"200"/>
-  <col width-"200"/>
+  <col width="100%"/>
+  <col width-"50%"/>
+  <col width-"100%"/>
+  <col width-"100%"/>
+  <col width-"100%"/>
 </colgroup>
 <!합계가 있는경우>
  <tfoot>
@@ -49,7 +49,6 @@
    <td>title5</td>
   </tr>
 </tbody>
-
   <tr>
    <td>title1</td>
    <td>title2</td>
@@ -57,16 +56,53 @@
    <td>title4</td>
    <td>title5</td>
   </tr>
+</table>
 
+<br>
+<!--table>caption+(colgroup>col[width=""]*4)+(thead>tr>th{text}*4)+(tbody>tr*5>td{text}*4)-->
 
-
-
-
-
-
-
-
-
+<table border="1" width="50%">
+  <caption></caption>
+  <colgroup>
+    <col width="100">
+    <col width="100">
+    <col width="100">
+    <col width="100">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>text</th>
+      <th>text</th>
+      <th>text</th>
+      <th>text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">text</td>
+      <td>text</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td colspan="3">text</td>
+      <td rowspan="3">text</td>
+    </tr>
+    <tr>
+      <td rowspan='2'>text</td>
+      <td rowspan="2">text</td>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>text</td>
+    </tr>
+    <tr>
+      <td>text</td>
+      <td>text</td>
+      <td>text</td>
+      <td>text</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
