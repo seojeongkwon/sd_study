@@ -9,27 +9,31 @@
 <body>
 
 <div>
+  <form>
   <fieldset>
     <legend>회원정보</legend>
-    <p><label for=name>이름</label>: <input type="text" name="fullname" id="name" placeholder="이름 입력"></p>
-    <p><label for=user>아이디</label>: <input type="text" name="username" id="user" placeholder="아이디 입력"><input type="submit" value="중복확인"></p>
-    <p><label for=password>비밀번호</label>: <input type="password" name="pwd" id="password" placeholder="비밀번호 입력"></p>
-    <p><label for=password2>비밀번호 확인</label>: <input type="password" name="pwd2" id="password2"placeholder="비밀번호 확인"></p>
-    <p><label for=email>이메일</label>: <input type="email" name="adress" id="email" placeholder="fksdud377@nate.com"></p>
-    <p><label for=email2>이메일 수신동의</label>:
-      <input type="radio" name="동의" value="yes" id="email2">동의
-      <input type="radio" name="동의" value="no">동의 안함</p>
-    <p><label for=phonenumber>전화번호</label>:
+    <ul>
+    <li><label for=name>이름</label>: <input type="text" name="fullname" id="name" placeholder="이름 입력"></li>
+    <li><label for=user>아이디</label>: <input type="text" name="username" id="user" placeholder="아이디 입력"><input type="submit" value="중복확인"></li>
+    <li><label for=password>비밀번호</label>: <input type="password" name="pwd" id="password" placeholder="비밀번호 입력"></li>
+    <li><label for=password2>비밀번호 확인</label>: <input type="password" name="pwd2" id="password2"placeholder="비밀번호 확인"></li>
+    <li><label for=email>이메일</label>: <input type="email" name="adress" id="email" placeholder="fksdud377@nate.com"></li>
+    <li><label for=emailyes>이메일 수신동의</label>:
+      <input type="radio" name="동의" value="yes" id="emaily"><label for="emailyes">동의</label>
+      <input type="radio" name="동의" value="no"><label for="emailno">동의안함</label></li>
+    <li><label for=phonenumber>전화번호</label>:
       <select name="pn" id="phonenumber">
       <option>SKT</option>
       <option>KT</option>
       <option>LG</option>
       </select>
-    <input type="text" placeholder="-빼고 숫자만 입력"></p>
-   <p><label for=information>정보이용<input type="checkbox" id=information>개인정보이용
-  <input type="checkbox">개인정보사용</p>
-  <p><input type="submit" value="가입"></p>
+    <input type="text" placeholder="-빼고 숫자만 입력"></li>
+   <li><label for=information>정보이용<input type="checkbox" id=information><label for="information1">개인정보이용</label>
+  <input type="checkbox" id="information2"><label for="information2">개인정보사용</label></li>
+  <li><input type="submit" value="가입"></li>
+</ul>
   </fieldset>
+</form>
 </div>
 
 
