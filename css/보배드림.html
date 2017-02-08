@@ -19,16 +19,16 @@ ul{list-style:none;}
 .right_top_bar{position:absolute; right:0; top:0;}
 .right_top_bar strong{color:blue;}
 .logo{position:absolute; bottom:50px;}
-.middle{outline:1px #f00 solid; width:295px; height:85px; position:absolute; left:387px; top:40px;}
+.middle{ width:295px; height:85px; position:absolute; left:387px; top:40px;}
 .middle img{position:absolute; left:20px;}
 #search{outline:2px #3b5999 solid; width:242px; height:20px; position:absolute; bottom:0; left:0;}
 .middle .img{outline:1.5px #3b5999 solid; position:absolute; bottom:-0.4px; left:248px;}
 .logo_bottom{font-size:13px; position:absolute; bottom:15px;}
-.event{outline:1px #f00 solid; position:absolute; right:5px; top:40px;}
+.event{ position:absolute; right:5px; top:40px;}
 
 .contents{outline:1px #f00 solid; width:100%; height:1426px; position:relative;}
-.menucontents{outline:1px #f00 solid; width:100%; height:77px;}
-.menu{outline:1px #f00 solid; width:100%; height:39px; background-color:#3b5999; }
+.menucontents{ width:100%; height:77px;}
+.menu{ width:100%; height:39px; background-color:#3b5999; }
 .menugroup{float:left; margin-top:7px; margin-left:10px;}
 .menugroup a{font-size:15px; color:#fff; }
 .menu .menu_notice{float:right; margin-top:7px;}
@@ -36,7 +36,7 @@ ul{list-style:none;}
 .sub_menu .left_submenu{margin-top:5px; margin-left:10px}
 .left_submenu a{font-size:12px; letter-spacing: -2px;}
 
-.sub_menu{outline:1px #f00 solid; width:100%; height:37px; position:absolute; top:40px;}
+.sub_menu{ width:100%; height:37px; position:absolute; top:40px;}
 .sub_menu .left_submenu{margin-top:5px; margin-left:10px; float:left;}
 .left_submenu a{font-size:12px; letter-spacing: -2px;}
 .right_submenu{font-size:12px; float:right; }
@@ -100,30 +100,69 @@ ul{list-style:none;}
 .loginbox .text{margin-top: 10px; position:absolute; right:0; bottom:0;}
 
 .hotissue{outline:1px #f00 solid; width:235px; height:251px; padding-top:5px; }
-.hotissue li{font-size:12px; margin-left:10px;  display:inline;}
-.hotissue li+li{margin-left:60px;}
-.hotissue img{float:right; margin-right:10px;}
-.hotissue .story li{outline:1px #f00 solid; width:100%; height:73px; display:block; margin-top:1px; }
+.hotissue li{font-size:12px;   display:inline;}
+.hotissue img{float:right; margin-right:10px; }
+.hotissue .story li{outline:1px #f00 solid; width:100%; height:73px; display:block;  }
 .hotissue .story ul{margin-top:10px;}
-.hotissue .story span{margin-top:10px;}
-.hotissue .story div{float:left; margin-top:10px;}
+.hotissue .story span{padding-top:10px;}
+.hotissue .story div{float:left; padding-top:10px;}
 
 
 .carnews{outline:1px #f00 solid; width:235px; height:198px;}
 .carnews .carlist{outline:1px #f00 solid; width:217px; height:152px; margin-top:10px; margin-left:10px;}
 .carlist span{font-size:12px; display:block; margin-left:85px; padding-top:5px;}
 .carlist img{float:left;}
-.carnews strong{font-size:12px; margin-left:10px; }
+.carnews strong{font-size:12px; margin-left:5px; }
 .carnews li{display:inline;}
-.carnews li+li{font-size:12px; float:right; margin-right:10px; margin-top:5px; }
+.carnews li+li{font-size:12px; float:left; margin-left:10px; margin-top:5px; }
+.car{margin-left:95px; font-size:12px;}
 
 .communityP{outline:1px #f00 solid; width:235px; height:194px;}
-.rank{outline:1px #f00 solid; width:235px; height:194px;}
-.story{outline:1px #f00 solid; width:235px; height:194px;}
-.eventnews{outline:1px #f00 solid; width:235px; height:108px;}
-.sns{outline:1px #f00 solid; width:235px; height:99px;}
+.communityP span{font-size:12px; margin-left:10px; margin-bottom:10px;}
+.communityP span+span{margin-left:60px; }
+.communityP img{float:left; margin-left:10px; margin-right:5px;}
+.communityP li{outline:1px #f00 solid; margin-top:15px; font-size:13px; display:block; margin-right:5px;}
 
-.notice{outline:1px #f00 solid; width:100%; height:245px;}
+
+.rank{outline:1px #f00 solid; width:235px; height:194px;}
+.rank span{font-size:12px; margin-left:10px; margin-bottom:10px;}
+.rank span+span{margin-left:60px;}
+.rank .car{float:right; margin-right:10px;}
+.rank li{outline:1px #f00 solid; font-size:13px; margin-left:5px; margin-top:8px; height:50px;}
+.rank ul{}
+
+.story{outline:1px #f00 solid; width:235px; height:194px;}
+.story span{font-size:12px; margin-left:10px; margin-bottom:10px;}
+.story span+span{margin-left:70px;}
+.story .pic{margin-top:15px; margin-left:10px;}
+
+.eventnews{outline:1px #f00 solid; width:235px; height:108px;}
+.eventnews span{font-size:12px; margin-left:10px; margin-bottom:10px;}
+.eventnews span+span{margin-left:90px;}
+.eventnews div img{float:left; margin-right:5px;}
+.eventnews div{font-size:13px; margin:15px 10px;}
+
+.sns{outline:1px #f00 solid; width:235px; height:99px;}
+.sns span{font-size:12px; margin-left:10px; margin-bottom:10px;}
+.sns div{margin-top:5px; margin-left:8px;}
+.sns img{margin:5px 2px;}
+
+.notice{outline:1px #f00 solid; width:100%; height:245px;position:relative;}
+.notice .name{outline:1px #f00 solid; width:100%; height:31px; font-size:12px; position:relative; left:0}
+.notice span{line-height:30px; margin-left:5px;}
+.show{position:absolute; right:15px;}
+.notice li{font-size:12px;}
+.notice_list div{float:left;  margin:10px 20px; line-height:19px;}
+.notice_list strong{font-size:13px; margin-bottom:5px; margin-top:5px; display:block;}
+
+.number{outline:1px #f00 solid; width:100%; height:31px;}
+.number li{float:left; font-size:12px; margin:5px 3px;}
+.info{outline:1px #f00 solid; width:100%; height:173px; position:relative;}
+.info .list {position:absolute; left:180px; margin-top:10px; margin-bottom:10px;}
+.info .list li{float:left; font-size:12px; margin:10px; background-image:url(../image/line.jpg); background-repeat:no-repeat; }
+.info_bottom{font-size:12px; padding-top:50px; text-align:center;}
+.info_bottom li : last-child{}
+
 </style>
 </head>
 <body>
@@ -313,7 +352,7 @@ ul{list-style:none;}
       <div clas="name">
         <ul>
          <li><strong>커뮤니티 핫이슈</strong></li>
-         <li><img src="../image/left.jpg" alt="">1/20 <img src="../image/right.jpg" alt=""></li>
+         <li class="more"><img src="../image/left.jpg" alt="">1/20 <img src="../image/right.jpg" alt=""></li>
         </ul>
       </div>
       <div class="story">
@@ -326,8 +365,8 @@ ul{list-style:none;}
     </div>
     <div class="carnews">
     <ul>
+      <li class="car">더보기<img src="../image/more.jpg" alt=""></li>
       <li><strong>자동차 뉴스</strong></li>
-      <li>더보기<img src="../image/more.jpg" alt=""></li>
     </ul>
       <div class="carlist">
         <ul>
@@ -339,15 +378,198 @@ ul{list-style:none;}
         </ul>
       </div>
     </div>
-    <div class="communityP"></div>
-    <div class="rank"></div>
-    <div class="story"></div>
-    <div class="eventnews"></div>
-    <div class="sns"></div>
+    <div class="communityP">
+     <div>
+      <span><strong>커뮤니티 인기글</strong></span>
+      <span>더보기<img src="../image/more.jpg" alt=""></span>
+    </div>
+    <div>
+      <ul>
+        <li><img src="../image/community_35.jpg" alt="">신호위반 접촉사고 망설임 없이 바로 도주</li>
+        <li><img src="../image/community_36.jpg" alt="">중앙선을 넘어선 순간 대형사고 간신히 모면</li>
+        <li><img src="../image/community_37.jpg" alt="">짙은안개 고속도로 살벌한 추돌사고</li>
+      </ul>
+    </div>
+    </div>
+    <div class="rank">
+      <div>
+       <span><strong>내차소 인기순위</strong></span>
+       <span>더보기<img src="../image/more.jpg" alt=""></span>
+     </div>
+     <div>
+       <ul>
+         <li><img src="../image/number1.jpg" alt=""><img class="car" src="../image/rank_39.jpg" alt="">270ELISA 님의 현대 투스카니</li>
+         <li><img src="../image/number2.jpg" alt=""><img class="car" src="../image/rank_40.jpg" alt="">대금이 님의 현대 뉴 제네시스</li>
+         <li><img src="../image/number3.jpg" alt=""><img class="car" src="../image/rank_41.jpg" alt="">날아라콩떡 님의 아우디 뉴 A6</li>
+       </ul>
+     </div>
+    </div>
+    <div class="story">
+      <div>
+       <span><strong>보배드림 이야기</strong></span>
+       <span>더보기<img src="../image/more.jpg" alt=""></span>
+     </div>
+       <img class="pic" src="../image/story_42_03.jpg" alt="">
+   </div>
+    <div class="eventnews">
+       <span><strong>이벤트 소식</strong></span>
+       <span>더보기<img src="../image/more.jpg" alt=""></span>
+     <div><img src="../image/event-news_42.jpg" alt="">맨즈박스에 참여한 브랜드 중 마음에 드는 상품을 골라주세요!</div>
+    </div>
+    <div class="sns">
+      <span><strong>보배드림과 SNS 친구맺기</strong></span>
+      <div><img src="../image/facebook.jpg" alt=""><img src="../image/twitter.jpg" alt=""><img src="../image/blog.jpg" alt="">
+        <img src="../image/kakaotalk.jpg" alt=""><img src="../image/youtube.jpg" alt=""><img src="../image/google.jpg" alt=""></div>
+    </div>
   </div>
 </section>
-<div class="notice"></div>
+<div class="notice">
+  <div class="name">
+    <span><strong>공지사항</strong></span>
+    <span>보배드림 어플 업데이트 안내</span>
+    <span class="show"><strong>서비스 전체보기 <img src="../image/right.jpg" alt=""></strong></span>
+  </div>
+<div class="notice_list">
+  <div>
+    <ul>
+      <li><strong>사이버매장</strong>
+        <ul>
+         <li>국산차매장</li>
+         <li>수입차매장</li>
+         <li>튜닝카매장</li>
+         <li>승용차매장</li>
+         <li>스포츠카매장</li>
+         <li>4륜/SUV매장</li>
+         <li>벤/승합차매장</li>
+         <li>오토갤러리매장</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li><strong>국산중고차</strong>
+        <ul>
+         <li>전체차량</li>
+         <li>인기차량</li>
+         <li>확인차량</li>
+         <li>경매차량</li>
+         <li>특수/특장차</li>
+         <li>국산차매장</li>
+         <li>중고차시세</li>
+         <li>차종별검색</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li><strong>수입중고차</strong>
+        <ul>
+         <li>전체차량</li>
+         <li>인기차량</li>
+         <li>확인차량</li>
+         <li>경매차량</li>
+         <li>특수/특장차</li>
+         <li>국산차매장</li>
+         <li>중고차시세</li>
+         <li>차종별검색</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li><strong>내차팔기</strong>
+        <ul>
+         <li>사이버매물등록</li>
+         <li>국산차등록</li>
+         <li>수입차등록</li>
+         <li>매물등록권 구입</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li><strong>게시판</strong>
+        <ul>
+         <li>베스트글</li>
+         <li>자유게시판</li>
+         <li>질문과 답변</li>
+         <li>시승기</li>
+         <li>내차소개</li>
+         <li>자동차동영상</li>
+         <li>특종사진</li>
+         <li>레이싱모델</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li><strong>자료실</strong>
+        <ul>
+         <li>내차소개</li>
+         <li>자동차동영상</li>
+         <li>특종사진</li>
+         <li>레이싱모델</li>
+         <li>내차소개</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li><strong>주요서비스</strong>
+        <ul>
+         <li>오토바이</li>
+         <li>용품장터</li>
+         <li>보배모델</li>
+         <li>경매차량</li>
+         <li>공매차량</li>
+         <li>이벤트</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class="number">
+<ul>
+  <li><strong>이용문의</strong>02-784-2329</li>
+  <li><strong>차량광고</strong>02-784-2329</li>
+  <li><strong>제휴문의</strong>070-4272-0165</li>
+  <li><strong>협력업체</strong>070-4272-0120</li>
+  <li><strong>광고문의</strong>070-4272-0158</li>
+  <li><strong>커뮤니티</strong>02-784-2329</li>
+  <li><strong>신고센터</strong>장애/오류신고<img src="../image/line.jpg" alt="">권리침해신고</li>
+</ul>
+</div>
+<div class="info">
+  <div class="list">
+    <ul>
+      <li><a href=""><strong>회사소개</strong></a></li>
+      <li><a href=""><strong>제휴광고</strong></a></li>
+      <li><a href=""><strong>협력업체신청</strong></a></li>
+      <li><a href=""><strong>인재채용</strong></a></li>
+      <li><a href=""><strong>이용약관</strong></a></li>
+      <li><a href=""><strong>개인정보취급방침</strong></a></li>
+      <li><a href=""><strong>고객센터</strong></a></li>
+      <li><a href=""><strong>사이트맵</strong></a></li>
+    </ul>
+  </div>
+  <div class="info_bottom">
+    <ul>
+      <li>사업자등록번호 : 117-81-64543 통신판매업신고번호 : 제 2012-서울영등포-0697호 <img src="../image/last_09.jpg" alt=""></li>
+      <li>주식회사 보배네트워크 주소 : 서울 영등포구 양평동3가 16 우림E비즈센터 11,12층 대표이사 : 김보배 개인정보관리책임자 : 김태형</li>
+      <li>대표전화 : 02-784-2329 대표팩스 : 02-6499-2329 이메일 : bobaedream@bobaedream.co.kr</li>
+      <li>Copyright(c)BOBAENETWORK All rights reserved</li>
+      <li>보배드림은 통신판매중개자이며 차량판매의 당사자가 아닙니다. 따라서 보배드림은 차량 거래검토 및 거래에 대하여 어떤 책임을 지지 않습니다.</li>
+    </ul>
 
+  </div>
+</div>
   </div>
 
 </body>

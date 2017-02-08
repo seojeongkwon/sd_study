@@ -1,0 +1,39 @@
+// out: styles.css, sourcemap: false, compress: true
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+@color-white:#FFF;
+@color-black:#000;
+@color-font:#AAA;
+@color-sub:#F8D0E6;
+@color-main:#CAA9D9;
+@color-master:#BF8CDB;
+@color-line:@color-sub;
+//F0FFBA
+//reset
+body,html,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,p{font-family: 'Amatic SC', cursive; margin:0; padding:0;}
+ul,ol,li{list-style:none;}
+img{border:0; vertical-align:top;}
+input{vertical-align:middle;}
+a{text-decoration: none; color:@color-font;}
+
+//layout
+#header{outline:1px #f00 solid;
+padding:20px 50px;
+ height:80px;
+ text-align:center;
+background-color: @color-master;
+h1{font-size:30px;
+  font-weight:300;
+  border-bottom:2px @color-sub solid;
+  padding-bottom:5px;
+  text-transform:uppercase;
+  display:inline-block;
+  a{color:@color-white;
+    span{font-size:12px;
+      display:block;}}}}
+.blogMenu{font-size:0;
+li{font-size:14px;
+  margin:10px 5px 0;
+  display:inline-block;
+  a{color:@color-white;
+    &:hover{color:@color-sub}}}}
