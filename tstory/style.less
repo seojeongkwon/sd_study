@@ -1,19 +1,20 @@
 // out: styles.css, sourcemap: false, compress: true
 
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Coming+Soon|Indie+Flower|Open+Sans|Pangolin');
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @color-white:#FFF;
 @color-black:#000;
 @color-font:#42353A;
 @color-sub:#F8D0E6;
 @color-main:#CAA9D9;
-@color-master:#BF8CDB;
+@color-master:#A9A2C4;
 @color-line:@color-sub;
+@color-write:#9D9CA1;
 
 @layoutwidth:700px;
 //F0FFBA
 //reset
-body,html,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,p{font-family: 'Amatic SC', 'Noto Sans KR',  cursive,sans-serif; margin:0; padding:0;}
+body,html,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,p{font-family: 'Coming Soon', 'Noto Sans KR',  cursive,sans-serif; margin:0; padding:0;}
 ul,ol,li{list-style:none;}
 img{border:0; vertical-align:top;}
 input{vertical-align:middle;}
@@ -21,8 +22,8 @@ a{text-decoration: none; color:@color-font;}
 
 //layout
 #header{
-  outline:1px #f00 solid;
-  padding:20px 50px;
+  outline:1px @color-master solid;
+  padding:20px 50px 40px;
   height:80px;
   text-align:center;
   background-color: @color-master;
@@ -37,145 +38,395 @@ a{text-decoration: none; color:@color-font;}
       color:@color-white;
       span{
         font-size:12px;
-        display:block;}
-      }
-    }
-    .blogMenu{font-size:0;
-      li{font-size:14px;
-        margin:10px 5px 0;
-        display:inline-block;
-        a{color:@color-white;
-          &:hover{color:@color-sub}
-        }
+        display:block;
       }
     }
   }
+  .blogMenu{
+    font-size:0;
+    li{
+      font-size:14px;
+      margin:10px 5px 0;
+      display:inline-block;
+      a{
+        color:@color-white;
+        &:hover{color:@color-sub}
+      }
+    }
+  }
+}
 
-  #container{width:990px; margin:20px auto;
-    border:1px @color-main solid; border-radius:3px; padding:5px;
-    position:relative; color:#9D9CA1; overflow:hidden;
-    #content{
-      width: @layoutwidth; float:left;
+#container{
+  width:990px;
+  margin:20px auto;
+  border:1px @color-master solid;
+  border-radius:3px;
+  padding:5px;
+  position:relative;
+  color:#9D9CA1;
+  overflow:hidden;
+  #content{
+    width: @layoutwidth;
+    float:left;
+    .searchList{
+      border:1px @color-line solid;
+      border-radius:3px;
+      h3{
+        font-size:15px;
+        margin:5px;
+      }
+      a{font-size:13px;}
+      li{margin:3px 5px;}
     }
 
-    .entry{
-      .titleWrap{
-        margin-bottom:30px;
-        h2 a{font-weight:300;
-          border-bottom:1px @color-main solid;
-          }}
+  .guestbook{
+    border:1px @color-line solid;
+    border-radius: 3px;
+    h3{font-size:15px;}
+    div{font-size:13px;}
+    .guestWrite{
+      textarea{
+        border:1px @color-master solid;
+        border-radius: 15px;
+        width:97.5%;
+        height:163px;
+        resize:none;
+        display:block;
+        margin:5px auto;
+      }
+      input[type="submit"]{
+        border:1px @color-master solid;
+        border-radius:3px;
+        background-color:@color-master;
+        color:@color-white;
+        margin-top:5px;
+        position:absolute;
+        right:310px;
+      }
+    }
+    .guestList{
+      margin:50px 10px 0;
 
-          .tagTrail{border:1px @color-sub solid;
+      display:block;
+      li{
+        border-bottom:1px @color-master solid;
+        position:relative;
+        margin:10px 5px;
+        .name{
+          color:@color-font;
+          margin-right:5px;
+        }
+        .date{
+          font-size:18px;
+          a{
+            font-size:13px;
+            color:@color-master;
+          }
+        }
+        .control{
+          position:absolute;
+          right:10px;
+          top:5px;
+          a{
+            border:1px #9D9CA1 solid;
+            height:30px;
+            font-size:14px;
+            font-weight:400;
+            padding:0 10px;
+            margin-right:3px;
             border-radius:3px;
-            margin:35px 0 0;
-            padding:10px 20px;
-            position:relative;
-            .tagText{position:absolute;
-              border-radius:3px 3px 0 0;
-              left:0; top:-30px;
-              height:25px;
-              margin-left:20px;
-              padding:0 15px;
-              background-color:@color-sub;
-              color:@color-white;}
-              a{font-size:14px;
-                font-weight:200;
-                border:1px #9D9CA1 solid;
-                color:#9D9CA1;
-                padding:0 10px;
-                border-radius:3px;}}
+            color:#9D9CA1;
+          }
+        }
+      }
+      p{margin:10px 0;}
+    }
+  }
 
-                .comment{margin-top:30px;
-                  border:1px @color-sub solid;
-                  border-radius:3px;
-                  padding:5px;
-                  h3{font-size:23px;
-                    color:#9D9CA1;
-                    margin:0 0 5px 10px;}
-                    .commentList{
-                      >ol>li{margin:20px 0 0 15px; min-height:60px;
-                        border-bottom:1px @color-main solid; position:relative;}
-                        >ol>li>ul>li{position:relative;
-                          margin:15px 20px 10px 60px;
-                          padding:10px 0;
-                          min-height: 60px; border-top:1px @color-sub solid;
-                          .image{border:2px @color-sub solid;}
-                          p{margin-left:64px;}
-                          } //p태그에 마진래프트를 주거나 overflow:hidden. 같은결과가 나옴.
-                          .image{display:block;
-                            width: 50px;
-                            height: 50px;
-                            border-radius:3px;
-                            border:2px @color-main solid;
-                            overflow:hidden;
-                            float:left;
-                            margin-right:10px;
-                            img{width:100%;
-                            }
-                          }
-                          .name{color:@color-font;
-                            margin-right:5px;}
-                            .date{font-size:18px;
-                              a{font-size:13px;
-                                color:@color-master;
-                                }}
-                                .control{position:absolute; right:10px; top:5px;
-                                  span{border:1px #9D9CA1 solid;
-                                    height:30px;
-                                    font-size:14px;
-                                    font-weight:200;
-                                    padding:0 10px;
-                                    border-radius:3px;
-                                    color:#9D9CA1;
-                                  }
+  .entry{
+    .titleWrap{
+      margin-bottom:30px;
+      h2 a{
+        font-weight:300;
+        font-size:20px;
+        color:@color-font;
+        border-bottom:1px @color-main solid;
+        margin-top:10px;
+        display:block;
+      }
+    }
+
+    //photo
+
+    .article{
+      ul{text-align:center; margin-left:15px;
+        &>li{margin-right:15px;}
+        &>li+li{margin-left:20px;}
+        li{
+          display:inline-block;
+        }
+      }
+      .sub1{
+        width:150px;
+        transition:1s;
+        &:hover{
+        transform:scale(2,2);
+        }
+      }
+      .sub2{
+        width:150px;
+        transition:1s;
+        &:hover{
+        transform:scale(2,2);
+        }
+      }
+      .alicelist1{
+        text-align: center;
+        li{
+          display:inline-block;
+          margin-bottom:35px;
+        }
+        .alicedog1{
+          width:150px;
+          transition:1s;
+          &:hover{transform:scale(2,2);}
+        }
+        .alicedog2{
+          width:150px;
+          transition:1s;
+          &:hover{transform:scale(2,2);}
+        }
+      }
+      .alicelist2{text-align: center;
+        li{display:inline-block;}
+        .alicedog3{
+          width:150px;
+          transition:1s;
+          &:hover{transform:scale(2,2);}
+        }
+        .alicedog4{
+          width:150px;
+          transition:1s;
+          &:hover{transform:scale(2,2);}
+        }
+      }
+    }
+    .tagTrail{
+      border:1px @color-sub solid;
+      border-radius:3px;
+      margin:35px 0 0;
+      padding:10px 20px;
+      position:relative;
+        .tagText{
+          position:absolute;
+          border-radius:3px 3px 0 0;
+          left:0; top:-30px;
+          height:25px;
+          margin-left:20px;
+          padding:0 15px;
+          background-color:@color-sub;
+          color:@color-white;
+        }
+      a{
+        font-size:14px;
+        font-weight:400;
+        border:1px #9D9CA1 solid;
+        color:#9D9CA1;
+        padding:2px 10px;
+        border-radius:3px;
+        display:inline-block;
+        margin-bottom:5px;
+      }
+    }
+    .actionTrail a{
+      color:@color-write;
+      display:inline-block;
+      padding-top:5px;
+    }
+
+    .comment{
+      margin-top:30px;
+      border:1px @color-sub solid;
+      border-radius:3px;
+      padding:5px;
+      h3{
+        font-size:23px;
+        color:#9D9CA1;
+        margin:0 0 5px 10px;
+      }
+      .commentList{
+        >ol>li{
+          margin:20px 0 0 15px;
+          min-height:60px;
+          border-bottom:1px @color-main solid;
+          position:relative;
+          p{margin-left:64px;}
+        }
+        >ol>li>ul>li{
+          position:relative;
+          margin:15px 20px 10px 60px;
+          padding:20px 0 10px;
+          min-height: 60px;
+          border-top:1px @color-sub solid;
+            .image{border:2px @color-sub solid;}
+            p{margin-left:64px;}
+            .control{
+              position:absolute;
+              right:10px;
+              top:15px;
+            }
+        } //p태그에 마진래프트를 주거나 overflow:hidden. 같은결과가 나옴.
+        .image{
+          display:block;
+          width: 50px;
+          height: 50px;
+          border-radius:3px;
+          border:2px @color-main solid;
+          overflow:hidden;
+          float:left;
+          margin-right:10px;
+          img{width:100%;}
+        }
+        .name{
+          color:@color-font;
+          margin-right:5px;
+        }
+        .date{
+          font-size:18px;
+          a{
+            font-size:13px;
+            color:@color-master;
+          }
+        }
+        .control{
+          position:absolute;
+          right:10px;
+          top:0;
+          span{
+            border:1px #9D9CA1 solid;
+            height:30px;
+            font-size:14px;
+            font-weight:400;
+            padding:0 10px;
+            border-radius:3px;
+            color:#9D9CA1;
+          }
+        }
+      }
 
 
-                                }
-                              }
+      .commentWrite{
+        .secretWrap{
+          font-size:14px;
+          color:@color-write;
+          input[type="checkbox"]{border:0;
+            border:1px @color-master solid;
+            border-radius:3px;
+          }
+        }
+        .textWrap{
+          margin:10px 20px 0;
+          text-align:center;
+          border:1px @color-master solid;
+          border-radius:15px;
+          textarea{
+            width:99%; height:163px;
+            vertical-align:top;
+            border:0 none;
+            resize:none;
+            background:transparent;
+       //background:transparent또는 textarea를 감싸고 있는아이에 overflow:hidden을 줌. (textare가  textwrap보더를 가려서)
+          }
+        }
+        .submit{
+          text-align:right; //input submit은 inline요소라 text-align으로 right주면된다.
+          margin-right:20px;
+          input[type="submit"]{
+            border:1px @color-master solid;
+            border-radius:3px;
+            color:@color-white;
+            background-color:@color-master;
+            margin-top:15px;
+          }
+        }
+      }
+    }
+    .paging{
+      text-align:center;
+      padding:20px 0;
+    }
 
 
 
-                              .textWrap{
-                                margin:10px 20px 0;
-                                text-align:center;
-                                border:1px @color-master solid;
-                                border-radius:15px;
-
-                                textarea{
-                                  width:99%; height:163px;
-                                  vertical-align:top;
-                                  border:0 none;
-                                  resize:none;
-                                  background:transparent;
-                                  //background:transparent또는 textarea를 감싸고 있는아이에 overflow:hidden을 줌. (textare가  textwrap보더를 가려서)
-
-                                  }}
-                                  input[type="submit"]{border:1px @color-master solid;
-                                    border-radius:3px;
-                                    color:@color-white;
-                                    background-color:@color-master;
-                                    position:absolute; right:350px;
-                                    margin-top:15px;
 
 
+  }
+}
+  #sidebar{
+    margin-bottom:100px;
+    margin-left:@layoutwidth+5px;
+    border:1px @color-line solid;
+    border-radius:3px;
+    padding:10px;
+    .blogImage img{
+      padding-bottom:10px;
+      width:200px;
+      height:200px;
+    }
+   .blogDesc{padding-bottom:10px;}
+    h3{
+      font-size:15px;
+      margin-bottom:5px;
+    }
+    a{font-size:13px;}
+    .search{border-top:2px #9D9CA1 dotted;
+      padding:10px 0;
+      input[type="text"]{border:0 none; border:2px @color-master solid;}
+      input[type="button"]{color:@color-white;
+        border:0 none; border:1px @color-master solid;
+        background-color:@color-master;
+      }
+    }
+    .category{
+      border-top:2px #9D9CA1 dotted;
+      padding:10px 0;
+    }
+    .recentPost{
+      border-top:2px #9D9CA1 dotted;
+      padding:10px 0;
+    }
+    .recentComment{
+      border-top:2px #9D9CA1 dotted;
+      padding:10px 0;
+    }
+    .counter{
+      border-top:2px #9D9CA1 dotted;
+      padding:10px 0;
+      li{margin:0 19px; margin:5px 0;}
+      ul{text-align:center;}
+    }
+    .calender{
+      border-top:2px #9D9CA1 dotted;
+      padding:10px 0;
+    }
+    .link{
+      border-top:2px #9D9CA1 dotted;
+      padding-top:10px;
+    }
+  }
+  #footer{
+    position:absolute;
+    right:15px;
+    bottom:5px;
+    text-align:right;
+    font-size:14px;
+    div{text-align: center;}
+    a{
+      color:@color-write;
+      letter-spacing:0.5px;
+      margin-left:5px;
+    }
+  }
 
-                                  }
-                                }
-                                .paging{text-align:center;
-                                  padding:20px 0;
-                                  a{
-                                    border:1px #f00 solid;
-                                    }
-                                  }
 
-                                }
-                                #sidebar{
-                                  margin-left:@layoutwidth;
-                                  border:1px #f00 solid;
-                                  padding:0 10px;
-                                  .blogImage img{
-                                    width:200px;
-                                    height:200px;
-                                  }
-                                }
-                              }
+}
