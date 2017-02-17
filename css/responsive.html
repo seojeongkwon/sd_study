@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+<style>
+
+.wrap{outline: 1px #f00 solid;
+  max-width:1100px;
+  margin:0 auto;}
+.left{outline:1px #f00 solid;
+  width:22.7272727272727273%;
+  height:500px;
+  float:left;}
+.content{outline:1px #f00 solid;
+  height:500px;
+  margin-left:22.7272727272727273%;}
+.grid{outline:1px #f00 solid;}
+ul{list-style: none; margin:0; padding:0; }
+li{outline:1px #fff solid;
+  width:25%;
+  float:left;
+  overflow:hidden;
+  position:relative;}
+li img{width:100%;
+  vertical-align: top;
+  transition:1s cubic-bezier(0.01, 1.15, 1, 0.07);}
+li:hover img{transform:scale(1.5);}
+
+@media screen and (max-width:480px){
+  li{float:none; width:auto; }
+}
+
+li:after{content:"";
+  position:absolute;
+  right:0;
+  top:0;
+  left:0;
+  bottom:0;
+  background-color:rgba(0, 255, 255, 0.3);
+  opacity:0;
+  transition:1s;
+  }
+  li:hover:after{opacity: 1;}
+
+.grid li .txt{color:#fff;
+  font-size:20px;
+  width:100%;
+  position:absolute;
+  left:0;
+  top:50%;
+  text-align: center;
+  margin-top:-15px;
+  line-height: 20px;
+  }
+  .grid li .main{
+    display:inline-block;
+    padding:5px 10px 10px;
+    border:1px #f00 solid;
+    position:relative;
+    border:transparent;
+  }
+  .grid li .txt .main .line1{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: #fff;
+    height:2px;
+    width:0%;
+    transition:0.5s;
+  }
+  .grid li:hover .txt .line1{
+    width:100%;
+  }
+  .grid li .txt .main .line2{
+    position:absolute;
+    top:0;
+    right:0;
+    background-color: #fff;
+    height:0%;
+    width:2px;
+    transition:0.25s;
+    transition-delay:0.5s;
+  }
+  .grid li:hover .txt .line2{
+    height:100%;
+  }
+  .grid li .txt .main .line3{
+    position:absolute;
+    bottom:0;
+    right:0;
+    background-color: #fff;
+    height:2px;
+    width:0%;
+    transition:0.5s;
+    transition-delay:0.75s;
+  }
+  .grid li:hover .txt .line3{
+    width:100%;
+  }
+  .grid li .txt .main .line4{
+    position:absolute;
+    bottom:0;
+    left:0;
+    background-color: #fff;
+    height:0%;
+    width:2px;
+    transition:0.25s;
+    transition-delay:1.25s;
+  }
+  .grid li:hover .txt .line4{
+    height:100%;
+  }
+
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="left"></div>
+<div class="content">
+<div class="grid">
+  
+  <ul>
+    <li>
+      <img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-01.jpg" alt="">
+       <span class=txt>
+        <span class="main">seojeong
+         <span class="line1"></span>
+         <span class="line2"></span>
+         <span class="line3"></span>
+         <span class="line4"></span>
+        </span>
+       </span>
+    </li>
+    <li>
+      <img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-02.jpg" alt="">
+     <span class="txt">
+       <span class="main">발자국
+         <span class="line1"></span>
+         <span class="line2"></span>
+         <span class="line3"></span>
+         <span class="line4"></span>
+       </span>
+     </span>
+    </li>
+    <li>
+      <img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-03.jpg" alt="">
+      <span class="txt">
+        <span class="main">면접
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+          <span class="line4"></span>
+        </span>
+      </span>
+    </li>
+    <li>
+      <img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-02.jpg" alt="">
+      <span class="txt">
+        <span class="main">발자국
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+          <span class="line4"></span>
+        </span>
+      </span>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+
+</body>
+</html>
