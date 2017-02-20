@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="animate.css" type="text/css">
+  <link rel="stylesheet" href="font/flaticon.css" type="text/css">
+  <script type="text/javascript" src="wow.min.js"></script>
+
+<style>
+.ff:before{font-size:50px; color:blue;}
+*{margin:0; padding:0;}
+html,body{height:100%;}
+section{height:100%; border:1px #f00 solid;}
+[class^="sec"]{position:relative;}
+[class^="box"]{position:absolute; width:200px; height:200px; border:1px #f00 solid; }
+[class*="x001"]{left:300px; top:200px;}
+[class*="x002"]{right:300px; top:200px;}
+[class*="x003"]{left:50%; bottom:200px;}
+</style>
+
+<script>
+    new WOW().init();
+</script>
+
+</head>
+<body>
+
+<section class="sec1">
+  <div class="box001 wow flash">
+    <i class="ff flaticon-airplane">비행중</i>
+  </div>
+  <div class="box002 wow bounce" data-wow-iteration="10"></div>
+  <div class="box003 wow wobble" data-wow-iteration="10"></div>
+</section>
+<section class="sec2">
+  <div class="box001 wow flash"></div>
+  <div class="box002 wow bounce"></div>
+  <div class="box003 wow wobble"></div>
+</section>
+<section class="sec3">
+  <div class="box001 wow bounceInup"></div>
+  <div class="box002 wow bounceInup"></div>
+  <div class="box003 wow bounceInup"></div>
+</section>
+<section class="sec4">
+  <div class="box001 wow bounceInup"></div>
+  <div class="box002 wow bounceInup"></div>
+  <div class="box003 wow bounceInup"></div>
+</section>
+<section class="sec5">
+  <div class="box001 wow bounceInup"></div>
+  <div class="box002 wow bounceInup"></div>
+  <div class="box003 wow bounceInup"></div>
+</section>
+
+</body>
+</html>
