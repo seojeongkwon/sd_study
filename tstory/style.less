@@ -242,6 +242,16 @@ a{text-decoration: none; color:@color-font;}
           &:hover{transform:scale(2,2);}
         }
       }
+      .studylist{
+        .study1{width:210px;
+          transition:1s;
+          &:hover{transform:scale(1.5);}
+        }
+        .study2{width:210px;
+          transition:1s;
+          &:hover{transform:scale(1.5);}
+        }
+      }
     }
     .tagTrail{
       border:1px @color-sub solid;
@@ -402,8 +412,9 @@ a{text-decoration: none; color:@color-font;}
     padding:10px;
     .blogImage img{
       padding-bottom:10px;
-      width:200px;
-      height:200px;
+      width:263px;
+      height:263px;
+      border:2px #ccc dotted;
     }
    .blogDesc{padding-bottom:10px;}
     h3{
@@ -422,6 +433,8 @@ a{text-decoration: none; color:@color-font;}
     .category{
       border-top:2px #9D9CA1 dotted;
       padding:10px 0;
+      h3{text-transform:uppercase;}
+      .category_list{li>ul li{color:#f00;}}
     }
     .recentPost{
       border-top:2px #9D9CA1 dotted;
